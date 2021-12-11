@@ -3,15 +3,16 @@
 using namespace std;
 
 int main() {
+    int X=0;
     char a[10][20], b[1][20];
     for (int i = 0; i < 10; i++) {
         cin >> a[i];
     }
     cin >> b[0];
-    if (f(a, b)==50){
-        cout << "non presente"<< endl;
+    if (controllo(a, b, X)){
+        cout << X << endl;
     }else {
-        cout << f(a, b);
+        cout << "non presente" << endl;
     }
     return 0;
 }
